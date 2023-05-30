@@ -85,7 +85,6 @@ def home():
     calon4 = Image.open(os.path.join(os.path.dirname(__file__), 'assets', 'images', 'calon4.png'))
     with st.sidebar:
         st.image(logo)
-        st.markdown("DYLAN BENAYA")
     with screen.container():
         col1, col2, col3, col4 = st.columns([2, 3, 3, 1])
         with col1:
