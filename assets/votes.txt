@@ -1,0 +1,5 @@
+calon,jumlah,nik,nama
+calon1,69,,
+calon2,55,,
+calon3,51,,
+calon4,82,,

@@ -1,0 +1,23 @@
+nik,nama,email,telp
+3671127801030003,Budi Santoso,budisantoso@gmail.com,08181818181
+360923480234,Patricia Gunawan,patgunn@gmail.com,0819029380293
+
+,f67f67if,,
+,sdfsdf,,
+,,,
+,vdfv,,
+,dhdtb,,
+,hahhhah,,
+,aaa,,
+,,,
+,namakuuu,,
+,,,
+,namaacu,,
+,ssss,,
+,,,
+,we,,
+,,,
+,,,
+11111111,asdasdasdasd,asdasdasdad@gmail.com,12312321
+321321321231,asdasda,dylan.benaya13@gmail.com,085718874633
+123,wasd,dylan.benaya13@gmail.com,085718874633
