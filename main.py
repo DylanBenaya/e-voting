@@ -188,34 +188,34 @@ def voting():
             """, unsafe_allow_html=True)
 
         choice = st.radio("", ("Calon 1", "Calon 2", "Calon 3", "Calon 4"), horizontal=True)
-        # if vote:
-        #     if choice=="Calon 1":
-        #         votedata['jumlah'][votedata['calon']=='calon1'] = votedata['jumlah'][votedata['calon']=='calon1']+1
-        #     elif choice=="Calon 2":
-        #         votedata['jumlah'][votedata['calon'] == 'calon2'] = votedata['jumlah'][votedata['calon'] == 'calon2'] + 1
-        #     elif choice=="Calon 3":
-        #         votedata['jumlah'][votedata['calon'] == 'calon3'] = votedata['jumlah'][votedata['calon'] == 'calon3'] + 1
-        #     elif choice=="Calon 4":
-        #         votedata['jumlah'][votedata['calon'] == 'calon4'] = votedata['jumlah'][votedata['calon'] == 'calon4'] + 1
-        #     st.markdown("<p style='font-size:2rem; text-align:center'> Terima kasih sudah memilih!</p>", unsafe_allow_html=True)
-        #     votedata.to_csv(os.path.join(os.path.dirname(__file__), 'assets', 'votes.txt'), index=None, sep=',', mode='w')
+        if vote:
+            if choice=="Calon 1":
+                votedata['jumlah'][votedata['calon']=='calon1'] = votedata['jumlah'][votedata['calon']=='calon1']+1
+            elif choice=="Calon 2":
+                votedata['jumlah'][votedata['calon'] == 'calon2'] = votedata['jumlah'][votedata['calon'] == 'calon2'] + 1
+            elif choice=="Calon 3":
+                votedata['jumlah'][votedata['calon'] == 'calon3'] = votedata['jumlah'][votedata['calon'] == 'calon3'] + 1
+            elif choice=="Calon 4":
+                votedata['jumlah'][votedata['calon'] == 'calon4'] = votedata['jumlah'][votedata['calon'] == 'calon4'] + 1
+            st.markdown("<p style='font-size:2rem; text-align:center'> Terima kasih sudah memilih!</p>", unsafe_allow_html=True)
+            votedata.to_csv(os.path.join(os.path.dirname(__file__), 'assets', 'votes.txt'), index=None, sep=',', mode='w')
         # choice = st.radio("", ("Calon 1", "Calon 2", "Calon 3", "Calon 4"), horizontal=True)
 
-        if vote and choice:
-            if choice == "Calon 1":
-                votedata['jumlah'][votedata['calon'] == 'calon1'] = votedata['jumlah'][votedata['calon'] == 'calon1'] + 1
-            elif choice == "Calon 2":
-                votedata['jumlah'][votedata['calon'] == 'calon2'] = votedata['jumlah'][votedata['calon'] == 'calon2'] + 1
-            elif choice == "Calon 3":
-                votedata['jumlah'][votedata['calon'] == 'calon3'] = votedata['jumlah'][votedata['calon'] == 'calon3'] + 1
-            elif choice == "Calon 4":
-                votedata['jumlah'][votedata['calon'] == 'calon4'] = votedata['jumlah'][votedata['calon'] == 'calon4'] + 1
+        # if vote and choice:
+        #     if choice == "Calon 1":
+        #         votedata['jumlah'][votedata['calon'] == 'calon1'] = votedata['jumlah'][votedata['calon'] == 'calon1'] + 1
+        #     elif choice == "Calon 2":
+        #         votedata['jumlah'][votedata['calon'] == 'calon2'] = votedata['jumlah'][votedata['calon'] == 'calon2'] + 1
+        #     elif choice == "Calon 3":
+        #         votedata['jumlah'][votedata['calon'] == 'calon3'] = votedata['jumlah'][votedata['calon'] == 'calon3'] + 1
+        #     elif choice == "Calon 4":
+        #         votedata['jumlah'][votedata['calon'] == 'calon4'] = votedata['jumlah'][votedata['calon'] == 'calon4'] + 1
 
-            st.markdown("<p style='font-size:2rem; text-align:center'>Terima kasih sudah memilih!</p>", unsafe_allow_html=True)
-            votedata.to_csv(os.path.join(os.path.dirname(__file__), 'assets', 'votes.txt'), index=None, sep=',', mode='w')
-            vote = False
-        else:
-            st.markdown("<p style='font-size:2rem; text-align:center'>Anda sudah melakukan pemilihan.</p>", unsafe_allow_html=True)
+        #     st.markdown("<p style='font-size:2rem; text-align:center'>Terima kasih sudah memilih!</p>", unsafe_allow_html=True)
+        #     votedata.to_csv(os.path.join(os.path.dirname(__file__), 'assets', 'votes.txt'), index=None, sep=',', mode='w')
+        #     vote = False
+        # else:
+        #     st.markdown("<p style='font-size:2rem; text-align:center'>Anda sudah melakukan pemilihan.</p>", unsafe_allow_html=True)
 
 # def voting():
 #     with screen.container():
